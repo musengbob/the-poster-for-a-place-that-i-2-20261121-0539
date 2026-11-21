@@ -354,5 +354,4 @@ for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
 const png = encodePNG(W, H, buf);
 mkdirSync(OUT, { recursive: true });
 writeFileSync(OUT + "/entry.png", png);
-writeFileSync("entry.png", png);
 console.log("wrote", png.length, "bytes to", OUT + "/entry.png");
